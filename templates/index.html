@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Anasayfa</title>
+</head>
+<body>
+
+
+<form action="/toplam" method= "post">
+<input type = "number" name = "number1"><br>
+
+<input type = "number" name = "number2">
+<button type = submit>Gonder</button>
+<h2>Total : {{total}}</h2>
+
+</form>
+    <h1>Merhaba Flask!</h1>
+
+    {% if message %}
+        <p>{{ message }}</p>
+        <p>Birinci sayı: {{ number }}</p>
+        <p>İkinci sayı: {{ number2 }}</p>
+    {% endif %}
+
+    {% if numbers %}
+        <h2>Sayı Listesi:</h2>
+        <ul>
+            {% for num in numbers %}
+                <li>{{ num }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    
+</body>
+</html>
