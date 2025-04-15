@@ -15,7 +15,8 @@ def list():
     return jsonify(numbers)
 @app.route("/api/game")
 def game():
-    words = ["vélo 🚴 ", "maison 🏚️", "voiture 🚗", "banane 🍌", "chaise 🪑"]
+    words = ["vélo:🚴 ", "maison:🏚️", "voiture:🚗", "banane:🍌", "chaise:🪑","chat:😻","zèbre:🦓","ours polaire:🐻‍❄️", "chien:🦮🐕🐩🐶","mouton:🐑","cheval:🐎","chocolat:🍫","frite:🍟","spaghetti:🍝",
+             "fantome:👻","tete de mort:☠️","diable:😈","alien:👽", ]
     options = random.sample(words, 4)       
     correct = random.choice(options)        
     return jsonify({
