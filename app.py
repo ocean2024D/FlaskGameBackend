@@ -67,7 +67,6 @@ def game():
 "ballon de football: ⚽",
 "basket-ball: 🏀",
 "tennis: 🎾",
-"baseball: ⚾",
 "golf: ⛳",
 "ping-pong: 🏓",
 "rugby: 🏉",
@@ -76,7 +75,7 @@ def game():
 "danse: 💃",
 "course: 🏃‍♀️",
 "natation: 🏊‍♀️",
-"vélo: 🚴‍♀️"
+
 ]
     options = random.sample(words, 4)       
     correct = random.choice(options)        
